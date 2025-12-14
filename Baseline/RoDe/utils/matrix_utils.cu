@@ -17,8 +17,8 @@
 #include <cstring>
 #include <numeric>
 
-// #include "glog/logging.h"
-#include "/home/ae123/module/local/include/glog/logging.h"
+#include "glog/logging.h"
+// #include "/home/xiaoxunpeng/local/include/glog/logging.h"
 #include "matrix_utils.h"
 
 
