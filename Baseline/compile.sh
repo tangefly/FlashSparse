@@ -5,7 +5,7 @@ cd RoDe &&
 rm -rf build &&
 mkdir build &&
 cd build &&
-cmake .. &&
+cmake .. -DGLOG_ROOT_DIR=$HOME/local &&
 make &&
 cd .. &&
 cd .. &&

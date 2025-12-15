@@ -1,7 +1,11 @@
 include(FindPackageHandleStandardArgs)
 
 # glog 安装前缀
-set(GLOG_ROOT_DIR "/home/xiaoxunpeng/local" CACHE PATH "Glog root directory")
+set(GLOG_ROOT_DIR "" CACHE PATH "Glog root directory")
+
+if(NOT GLOG_ROOT_DIR AND DEFINED ENV{GLOG_ROOT_DIR})
+    set(GLOG_ROOT_DIR "$ENV{GLOG_ROOT_DIR}")
+endif()
 
 # include 路径：一定要是 include 的上一级
 find_path(GLOG_INCLUDE_DIR
